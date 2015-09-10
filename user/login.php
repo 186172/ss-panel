@@ -25,10 +25,9 @@ require_once '../lib/config.php';
 <body class="login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="#"><b><?php echo $site_name;  ?></b></a>
+        <a href="#"><b><?php echo $site_name;  ?> - 登录</b></a>
     </div><!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg">登录到用户中心</p>
 
             <form>
             <div class="form-group has-feedback">
@@ -44,7 +43,7 @@ require_once '../lib/config.php';
                 <div class="col-xs-8">
                     <div class="checkbox icheck">
                         <label>
-                            <input id="remember_me" value="week" type="checkbox"> 记住我
+                            <input id="remember_me" value="week" type="checkbox"> 下次自动登陆
                         </label>
                     </div>
                 </div><!-- /.col -->
@@ -62,8 +61,7 @@ require_once '../lib/config.php';
                 <h4><i class="icon fa fa-warning"></i> 出错了!</h4>
                 <p id="msg-error-p"></p>
             </div>
-        <a href="resetpwd.php">忘记密码</a><br>
-        <a href="register.php" class="text-center">注册个帐号</a>
+            <div><span class="pull-right"><a href="resetpwd.php">忘记密码</a></span><a href="register.php">新用户注册</a></div>
 
     </div><!-- /.login-box-body -->
 </div><!-- /.login-box -->

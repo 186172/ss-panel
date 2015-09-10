@@ -27,10 +27,9 @@ $uid  = $_GET['uid'];
 <body class="login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="#"><b><?php echo $site_name;  ?></b></a>
+        <a href="#"><b><?php echo $site_name;  ?> - 重置密码</b></a>
     </div><!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg">重置密码</p>
 
             <input type="hidden" id="code" name="code" class="form-control" value="<?php echo $code;?>" required autofocus>
             <input type="hidden" id="uid" name="uid" class="form-control" value="<?php echo $uid;?>" required autofocus>
@@ -43,13 +42,13 @@ $uid  = $_GET['uid'];
             <div class="form-group has-feedback">
                 <button type="submit" id="reset" class="btn btn-primary btn-block btn-flat">重置</button>
             </div>
-    
+
             <div id="msg-success" class="alert alert-info alert-dismissable" style="display: none;">
                 <button type="button" class="close" id="ok-close" aria-hidden="true">&times;</button>
                 <h4><i class="icon fa fa-info"></i> 成功!</h4>
                 <p id="msg-success-p"></p>
             </div>
-    
+
             <div id="msg-error" class="alert alert-warning alert-dismissable" style="display: none;">
                 <button type="button" class="close" id="error-close" aria-hidden="true">&times;</button>
                 <h4><i class="icon fa fa-warning"></i> 出错了!</h4>
@@ -57,6 +56,8 @@ $uid  = $_GET['uid'];
             </div>
 
         <a href="login.php" class="text-center">返回登录</a>
+        <hr>
+        <p>重置密码暂不支持QQ邮箱</p>
 
     </div><!-- /.login-box-body -->
 </div><!-- /.login-box -->

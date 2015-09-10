@@ -1,13 +1,18 @@
 
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-         Processed in：<?php
+        <strong>&copy; <?php echo $site_name."  ".date('Y'); ?></strong>
+        &nbsp;|&nbsp;
+        V<?php echo $version; ?>
+        &nbsp;|&nbsp;
+        <?php
         $Runtime->Stop();
         echo $Runtime->SpendTime()."ms";
         ?>
     </div>
-    <strong>Copyright &copy; 2014-<?php echo date('Y'); ?> <a href="#"><?php echo $site_name;  ?></a> </strong>
-            All rights reserved.  Powered by  <b>ss-panel</b><?php echo $version; ?> | <a href="tos.php">服务条款  </a>
+    <a target="_blank" href="tos.php">用户协议</a>
+    &nbsp;|&nbsp;
+    <a target="_blank" href="http://shadowsocks.org/en/download/clients.html">客户端下载</a>
 </footer>
 </div><!-- ./wrapper -->
 <?php

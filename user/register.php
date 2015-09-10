@@ -25,18 +25,18 @@ require_once '../lib/config.php';
 <body class="register-page">
 <div class="register-box">
     <div class="register-logo">
-        <a href="../"><b><?php echo $site_name;  ?></b></a>
+        <a href="../"><b><?php echo $site_name;  ?> - 用户注册</b></a>
     </div>
 
     <div class="register-box-body">
-        <p class="login-box-msg">注册，然后变成一只猫。</p>
+        <p class="login-box-msg">！！！请勿使用QQ邮箱注册！！！</p>
 
             <div class="form-group has-feedback">
                 <input type="text" id="name" class="form-control" placeholder="昵称"/>
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="text" id="email" class="form-control" placeholder="邮箱"/>
+                <input type="text" id="email" class="form-control" placeholder="邮箱（登陆凭证）"/>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
@@ -54,19 +54,19 @@ require_once '../lib/config.php';
 
 
             <div class="form-group has-feedback">
-               <p>注册即代表同意<a href="tos.php">服务条款</a></p>
+               <p>注册即代表同意<a target="_blank" href="tos.php">用户协议</a></p>
             </div>
 
             <div class="form-group has-feedback">
-                <button type="submit" id="reg" class="btn btn-primary btn-block btn-flat">同意服务条款并提交注册</button>
+                <button type="submit" id="reg" class="btn btn-primary btn-block btn-flat">同意用户协议并提交注册</button>
             </div>
-            
+
             <div id="msg-success" class="alert alert-info alert-dismissable" style="display: none;">
                 <button type="button" class="close" id="ok-close" aria-hidden="true">&times;</button>
                 <h4><i class="icon fa fa-info"></i> 成功!</h4>
                 <p id="msg-success-p"></p>
             </div>
-    
+
             <div id="msg-error" class="alert alert-warning alert-dismissable" style="display: none;">
                 <button type="button" class="close" id="error-close" aria-hidden="true">&times;</button>
                 <h4><i class="icon fa fa-warning"></i> 出错了!</h4>

@@ -1,9 +1,9 @@
-<footer class="page-footer orange">
+<footer class="page-footer grey">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
                 <h5 class="white-text">关于</h5>
-                <p class="grey-text text-lighten-4">本站提供某种帐号用于科学上网.</p>
+                <p class="grey-text text-lighten-4">由GAV1N创办的非盈利性组织，旨在为上网困难户提供义务的帮助。<br />欢迎加入，一起贡献力量。</p>
 
 
             </div>
@@ -26,11 +26,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            &copy; <?php echo $site_name."  ".date('Y'); ?>  Powered by <a class="orange-text text-lighten-3" href="https://github.com/orvice/ss-panel">ss-panel</a> <?php echo $version; ?>
-            Processed in <?php
-            $Runtime->Stop();
-            echo $Runtime->SpendTime()."ms";
-            ?> Theme by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            &copy; <?php echo $site_name."  ".date('Y'); ?>
         </div>
     </div>
 </footer>
